@@ -6,7 +6,7 @@ A sleek, React-based weather application where users can search for any city and
 
 ## 🔗 Live Demo
 
-**Hosted on Vercel:** [View Live Project](https://your-vercel-link.vercel.app)  
+**Hosted on Vercel:** [View Live Project](https://weather-dashboard-project-five.vercel.app/)  
 **GitHub Repo:** [weather-dashboard-project](https://github.com/vibhuti2006/weather-dashboard-project)
 
 ---
