@@ -39,7 +39,9 @@ A sleek, React-based weather application where users can search for any city and
 ## 📸 Preview
 
 ![Screenshot of the Search Bar](./public/searchbar.png)
+---
 ![Screenshot of the Weather card and Favourite city section](./public/favcity.png)
+---
 ![Screenshot of the 5-day forecast](./public/forecast.png)
 
 
