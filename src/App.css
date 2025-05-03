@@ -1,0 +1,158 @@
+:root {
+  --primary-color: #3c47e9;
+  --primary-dark: #100e1d;
+  --primary-light: #1e213a;
+  --text-color: #e7e7eb;
+  --text-secondary: #a09fb1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--primary-dark);
+  color: var(--text-color);
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.app-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.app-logo svg {
+  color: var(--primary-color);
+}
+
+.unit-toggle {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-light);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.unit-toggle-button {
+  background: none;
+  border: none;
+  padding: 8px 15px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.unit-toggle-button.active {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+
+/* original */
+
+.main-content {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.forecast-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.forecast-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.forecast-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .sidebar {
+    order: 2;
+  }
+  
+  .forecast-section {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .forecast-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 10px;
+  }
+  
+  .app-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .forecast-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

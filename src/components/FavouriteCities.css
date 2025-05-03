@@ -1,0 +1,95 @@
+.favourite-cities {
+  background-color: #1e213a;
+  color: #e7e7eb;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.favourite-cities-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.favourite-cities-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.favourite-cities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.favourite-city {
+  background-color: #100e1d;
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.favourite-city:hover {
+  background-color: #3c47e9;
+}
+
+.favourite-city-name {
+  margin-right: 10px;
+}
+
+.favourite-city-remove {
+  background: none;
+  border: none;
+  color: #a09fb1;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favourite-city-remove:hover {
+  color: #e7e7eb;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.add-favourite {
+  width: 100%;
+  background-color: #3c47e9;
+  color: #e7e7eb;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.add-favourite:hover {
+  background-color: #4c56f5;
+}
+
+.add-favourite:disabled {
+  background-color: #252945;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.empty-favourites {
+  text-align: center;
+  color: #a09fb1;
+  padding: 20px 0;
+}
