@@ -40,7 +40,7 @@ const SearchBar = () => {
 
       try {
         // const apiKey = process.env.OPEN_WEATHER_API_KEY;
-        const apiKey = 'b32abc4a9571774e222698dac231512d';
+        const apiKey = import.meta.env.VITE_OPEN_WEATHER_API_KEY;
 
 
         const response = await fetch(
