@@ -38,13 +38,13 @@ A sleek, React-based weather application where users can search for any city and
 
 ## 📸 Preview
 
-<img src="./public/searchbar.png" width="300"/>  
+<img src="./public/searchbar.png" width="700"/>  
 <br>
 
-<img src="./public/favcity.png" width="300"/>  
+<img src="./public/favcity.png" width="400"/>  
 <br>
 
-<img src="./public/forecast.png" width="300"/>
+<img src="./public/forecast.png" width="700"/>
 
 
 ---
